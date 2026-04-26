@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oxente Burguer — Nosso Novo App Chegou! Peça Agora.</title>
+    <meta
+      name="description"
+      content="Melhor a cada mordida. Peça seu hambúrguer feito na brasa mais rápido, sem baixar nada e com vantagens exclusivas em Jaicós-PI."
+    />
+
+    <meta property="og:title" content="Oxente Burguer — Peça Agora!" />
+    <meta
+      property="og:description"
+      content="Melhor a cada mordida. Peça seu hambúrguer feito na brasa direto pelo nosso novo app. Rápido e sem baixar nada."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="assets/imagens/fundo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="assets/icones/icone-hamburguer.png"
+            alt="Logo Oxente"
+            class="logo-img-destaque"
+          />
+          <span class="logo-texto">Oxente Burguer</span>
+        </div>
+
+        <nav class="navegacao">
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-lista" id="navLista">
+            <li><a href="#novidades" class="nav-link">O que mudou?</a></li>
+            <li><a href="#vantagens" class="nav-link">Vantagens</a></li>
+            <li><a href="#como-funciona" class="nav-link">Como Pedir</a></li>
+            <li>
+              <a href="#contato" class="nav-link cta-nav">Cardápio Digital</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-conteudo">
+          <div class="hero-badge">🚀 NOVIDADE EM JAICÓS-PI</div>
+          <h1 class="hero-titulo">Feito na brasa. Melhor a cada mordida.</h1>
+          <p class="hero-descricao">
+            Dê adeus à espera no WhatsApp! Lançamos nossa plataforma própria
+            para você pedir o melhor burguer da cidade de forma mais rápida, sem
+            baixar nenhum app.
+          </p>
+
+          <div class="hero-ctas">
+            <button class="btn btn-primario btn-grande" id="btnDemoHero">
+              <span>Fazer Meu Pedido</span>
+              <img
+                src="assets/icones/icone-hamburguer.png"
+                alt="Ícone Burger"
+                class="btn-icon"
+              />
+            </button>
+            <button class="btn btn-secundario btn-grande" id="btnSaibaMais">
+              <span>Ver Benefícios</span>
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-numero">100%</div>
+              <div class="stat-label">Artesanal & Na Brasa</div>
+            </div>
+            <div class="stat">
+              <div class="stat-numero">+ Rápido</div>
+              <div class="stat-label">Direto pra chapa</div>
+            </div>
+            <div class="stat">
+              <div class="stat-numero">Zero</div>
+              <div class="stat-label">Downloads necessários</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="device-showcase">
+            <div class="device-phone">
+              <div class="device-notch"></div>
+              <div class="device-screen">
+                <div class="mockup-header">🍔 Oxente Burguer</div>
+                <div class="mockup-item">
+                  <div class="mockup-item-img mockup-img-1"></div>
+                  <div class="mockup-item-text">Smash Bacon Duplo</div>
+                </div>
+                <div class="mockup-item">
+                  <div class="mockup-item-img mockup-img-2"></div>
+                  <div class="mockup-item-text">Fritas com Cheddar</div>
+                </div>
+                <div class="mockup-cta">Adicionar ao Carrinho →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="novidades" class="secao sistema">
+      <div class="container">
+        <div class="secao-titulo-grupo">
+          <div class="secao-badge">EXPERIÊNCIA PREMIUM</div>
+          <h2 class="secao-titulo">
+            Pensado para matar a sua fome. Mais rápido.
+          </h2>
+        </div>
+
+        <div class="grid-aplicacoes">
+          <div class="card-aplicacao" data-app="cliente">
+            <img
+              src="assets/icones/smartphone.png"
+              alt="App"
+              class="card-icon-img"
+            />
+            <h3>Cardápio Dinâmico</h3>
+            <p>
+              Coma com os olhos antes de pedir. Navegue por categorias, veja
+              fotos reais e monte seu lanche do seu jeito.
+            </p>
+            <div class="card-cor app-cliente"></div>
+          </div>
+
+          <div class="card-aplicacao" data-app="admin">
+            <img
+              src="assets/icones/browser.png"
+              alt="Pagamento"
+              class="card-icon-img"
+            />
+            <h3>Pagamento Sem Fila</h3>
+            <p>
+              Pix integrado e instantâneo ou cartão de crédito seguro. Tudo
+              direto pelo celular sem complicação.
+            </p>
+            <div class="card-cor app-admin"></div>
+          </div>
+
+          <div class="card-aplicacao" data-app="cozinha">
+            <img
+              src="assets/icones/fire.png"
+              alt="Cozinha"
+              class="card-icon-img"
+            />
+            <h3>Direto na Chapa</h3>
+            <p>
+              Seu toque no celular acende um alerta na nossa cozinha. Seu pedido
+              vai pra chapa na mesma hora.
+            </p>
+            <div class="card-cor app-cozinha"></div>
+          </div>
+
+          <div class="card-aplicacao" data-app="delivery">
+            <img
+              src="assets/icones/motorcycle.png"
+              alt="Delivery"
+              class="card-icon-img"
+            />
+            <h3>Acompanhe ao Vivo</h3>
+            <p>
+              A ansiedade bateu? Saiba exatamente onde seu lanche está, desde a
+              montagem até a porta da sua casa.
+            </p>
+            <div class="card-cor app-delivery"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vantagens" class="secao funcionalidades">
+      <div class="container">
+        <div class="secao-titulo-grupo">
+          <div class="secao-badge">POR QUE USAR?</div>
+          <h2 class="secao-titulo">Vantagens exclusivas do App</h2>
+        </div>
+
+        <div class="grid-funcionalidades">
+          <div class="feature-card">
+            <img
+              src="assets/icones/flash.png"
+              alt="Rápido"
+              class="feature-icon-img"
+            />
+            <h3>Sem Baixar Nada</h3>
+            <p>
+              Não ocupe memória do seu celular. Acesse o link e abra direto no
+              navegador.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icones/relogio.png"
+              alt="Relógio"
+              class="feature-icon-img"
+            />
+            <h3>Horário de Atendimento</h3>
+            <p>
+              Das 18:30 às 23:00hrs.<br />Aberto de Segunda a Domingo (fechado
+              às terças).
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icones/check.png"
+              alt="Check"
+              class="feature-icon-img"
+            />
+            <h3>Pedido Expresso</h3>
+            <p>
+              Seu histórico fica salvo. Com três cliques você repete seu último
+              pedido.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao cta-final" id="contato">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Deu fome por aí? A chapa já tá quente!</h2>
+          <p class="cta-descricao">
+            Acesse nosso novo cardápio digital, monte seu lanche perfeito e
+            receba direto na sua casa ou na mesa.
+          </p>
+          <div class="cta-botoes">
+            <button class="btn btn-primario btn-grande" onclick="abrirModal()">
+              Acessar Cardápio
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grid">
+          <div class="rodape-coluna">
+            <h4>Nossos Links</h4>
+            <ul>
+              <li><a href="#novidades">Cardápio Digital</a></li>
+              <li><a href="#vantagens">Horário de Funcionamento</a></li>
+              <li><a href="#como-funciona">Área de Entrega</a></li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4>Atendimento</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://wa.me/message/L6LE732YT2PSL1"
+                  target="_blank"
+                  class="rodape-link-destaque"
+                  >Fazer Pedido no WhatsApp</a
+                >
+              </li>
+              <li><span class="rodape-texto-muted">📍 Jaicós - PI</span></li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4>Horário de Funcionamento</h4>
+            <ul class="rodape-lista-info">
+              <li>
+                <img
+                  src="assets/icones/relogio.png"
+                  alt="Horário"
+                  class="rodape-icon"
+                />
+                18:30 às 23:00hrs
+              </li>
+              <li>
+                <img
+                  src="assets/icones/calendario.png"
+                  alt="Dias"
+                  class="rodape-icon"
+                />
+                Aberto de Seg a Dom
+              </li>
+              <li>
+                <img
+                  src="assets/icones/fechar.png"
+                  alt="Fechado"
+                  class="rodape-icon"
+                />
+                (Fechado às Terças-feiras)
+              </li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4>Redes Sociais</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://instagram.com/oxente.burguer__"
+                  target="_blank"
+                  class="rodape-link-destaque"
+                  >Instagram @oxente.burguer__</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rodape-bottom">
+          <p>
+            &copy; 2026 Oxente Burguer. Todos os direitos reservados. Plataforma
+            desenvolvida por
+            <a href="https://www.instagram.com/stack.dev.web/">Stack</a>.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://instagram.com/oxente.burguer__"
+              target="_blank"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+            <a
+              href="https://wa.me/message/L6LE732YT2PSL1"
+              target="_blank"
+              aria-label="WhatsApp"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modalDemo">
+      <div class="modal-conteudo">
+        <button class="modal-fechar" id="modalFechar">&times;</button>
+
+        <h3 class="modal-titulo">Como você prefere pedir hoje?</h3>
+
+        <p class="modal-subtitulo">
+          Selecione a opção que melhor se encaixa com sua fome agora:
+        </p>
+
+        <div class="modal-grid">
+          <a
+            href="burger-system/client/index.html?mode=delivery"
+            class="modal-item"
+            target="_blank"
+          >
+            <img
+              src="assets/icones/motorcycle.png"
+              alt="Delivery"
+              class="modal-item-img"
+            />
+            <span
+              >Quero Delivery<br />
+              <small class="modal-item-desc">(Receber em casa)</small>
+            </span>
+          </a>
+
+          <a
+            href="burger-system/client/index.html?mesa=scan"
+            class="modal-item"
+            target="_blank"
+          >
+            <img
+              src="assets/icones/mesa.png"
+              alt="Pedir na Mesa"
+              class="modal-item-img"
+            />
+            <span
+              >Na Hamburgueria<br />
+              <small class="modal-item-desc">(Pedir na Mesa)</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
